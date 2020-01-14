@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Gatlin Previews</title>
+  </head>
+  <style media="screen">
+    .fade-in {
+      animation: fade 3s;
+    }
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      33% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+  </style>
+
+  <body>
+    <script type="text/javascript">
+      function myFunction() {
+        var pw = "Joines2020";
+        var guess = "";
+        attempt = 1;
+        max = 4
+        while (guess != pw && attempt == 1) {
+          guess = prompt("Please enter password:");
+          attempt++;
+        }
+        while (guess != pw && attempt > 1 && attempt <= max) {
+          guess = prompt("Incorrect password! Try again:");
+          attempt++;
+        }
+        if (guess != pw && attempt > max) {
+          window.stop();
+        }
+      }
+      window.onload = myFunction();
+    </script>
+    <div class="container fade-in">
+      <h1 class="py-4">Gatlin Previews</h1>
+
+      <section id="gallery">
+        <div class="card-columns">
+
+        </div>
+      </section>
+    </div>
+    <section class="footer bg-dark text-center py-4">
+      <h3 class="text-muted">Nick Burgher Photography | 2020</h3>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
